@@ -1,17 +1,8 @@
-<!-- <div class="row">
-  <div class="col-xs-10">
-    <div class="center">
-      <h2>Welcome to products</h2>
-      <p>1 You can see list of products here, filter and sort them</p>
-      <p>2 You are able to edit products data</p>
-    </div>
-  </div>
-</div> -->
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3 col-sm-12">
     <app-product-sort (sortClickedEmmiter)="onSort($event)"></app-product-sort>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-9 col-sm-12">
     <app-product-item
       *ngFor="let productEl of productList"
       [product]="productEl"

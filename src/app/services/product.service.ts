@@ -14,7 +14,7 @@ export class ProductService {
 
   getProducts(): Observable<ProductModel[]> {
     const productsJson = localStorage.getItem('productList');
-    if (productsJson) return of(JSON.parse(productsJson)); // har vaght data omad ino befrest
+    if (productsJson) return of(JSON.parse(productsJson));
 
     localStorage.setItem('productList', JSON.stringify(ProductMock));
     return of(ProductMock);
